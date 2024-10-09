@@ -50,9 +50,22 @@ const ProjetsGallery = () => {
       imageUrl: "images/apercu gamegirl.png",
       projectUrl: "https://game-girl-seven.vercel.app/",
     },
+    {
+      title: "Portfolio",
+      description: (
+        <>
+          {" "}
+          "Le Portfolio où vous êtes actuellement <br />
+          ",
+        </>
+      ),
+      techStack: "React, Javascript, Tailwind",
+      imageUrl: "",
+      projectUrl: "",
+    },
   ];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap:6 p-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap:4 p-4">
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}

@@ -1,12 +1,12 @@
 import React from "react";
 //import logo from './logo.svg';
 import "./App.css";
-import Apropos from "./components/Apropos";
+import Apropos from "./components/AproposAndCV";
 import Contact from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ProjectGallery from './components/ProjectGallery';
-import SkillsAndCV from "./components/SkillsAndCV";
+import Skills from "./components/Skills";
 //
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <ProjectGallery />
         </section>
         <section id="skills">
-          <SkillsAndCV />
+          <Skills />
         </section>
         <section id="contact">
           <Contact />
