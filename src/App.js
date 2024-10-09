@@ -11,7 +11,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-">
       <Header />
       <main>
         <section id="apropos">
