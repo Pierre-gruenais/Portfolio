@@ -23,8 +23,9 @@ const ProjectCard = ({
   };
 
   return (
+    
     <div
-      className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+      className="relative flex flex-col w-full max-w-xl mx-auto mb-8  border  border-sky-7 overflow-hidden rounded-lg box-shadow-2xl cursor-pointer "
       onClick={handleClick}
       onMouseEnter={() => setIsActive(true)}
       onMouseLeave={() => setIsActive(false)}
@@ -32,7 +33,7 @@ const ProjectCard = ({
       <img
         src={imageUrl}
         alt={title}
-        className="w-full h-64 object-cover transition-transform duration-300 transform hover:scale-110"
+        className=" bg-sky-12w-full h-64 object-cover transition-transform duration-300 transform hover:scale-110"
       />
       <div
         className={`absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity duration-300 ${
@@ -47,7 +48,7 @@ const ProjectCard = ({
             {techStack.split(",").map((tech, index) => (
               <span
                 key={index}
-                className="bg-gray-400 text-gray-700 text-xs px-2 py-1 rounded"
+                className="bg-sky-7 text-gray-700 text-xs px-2 py-1 rounded"
               >
                 {tech.trim()}
               </span>

@@ -11,7 +11,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="App bg-">
+    <div className="App bg-sky-12">
       <Header />
       <main>
         <section id="apropos">

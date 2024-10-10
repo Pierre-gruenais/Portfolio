@@ -4,14 +4,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className=" bg-blue-100 text-blue-400 p-4">
+    <footer className=" bg-sky-12 text-white p-8">
       <div className="container mx-auto flex flex-col items-center">
         <div className="flex space-x-4 mb-4">
           <a
             href="https://www.linkedin.com/in/pierre-gruenais/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-800"
+            className="hover:text-sky-7"
           >
             <FaLinkedin size={24} />
           </a>
@@ -19,7 +19,7 @@ const Footer = () => {
             href="https://github.com/Pierre-gruenais"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-800"
+            className="hover:text-sky-7"
           >
             <FaGithub size={24} />
           </a>

@@ -15,8 +15,8 @@ const ContactForm = () => {
     console.log(formData);
   };
   return (
-    <div className="mb-12">
-      <p>
+    <div className="mb-12 text-black bg-sky-12 py-8">
+      <p className="text-white">
         Vous pouvez me contacter ici{" "}
         <img
           src="images/hand_point_right.png"
@@ -25,19 +25,19 @@ const ContactForm = () => {
         />
         <a
           href="mailto:votre@email.com"
-          className="ml-2 text-blue-500 hover:underline"
+          className="ml-2 text-sky-7 hover:underline"
         >
           votre@email.com
         </a>
       </p>
-      <p className="mt-4 mb-4"> ou via le formulaire de contact ci-dessous</p>
+      <p className="mt-4 mb-4 text-white"> ou me laisser un message ci-dessous</p>
 
-      <div className=" border border-zinc-500 rounded-lg shadow-lg max-w-md mx-auto p-4">
+      <div className="">
         <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-          <div className="mb-4">
+          <div className="relative m-4">
             <label
               htmlFor="name"
-              className="block mb-2 text-sm font-medium text-gray-700"
+              className="absolute -top-2 left-3 border border-sky-10 rounded bg-white px-1 text-sm text-gray-500"
             >
               Nom
             </label>
@@ -48,14 +48,14 @@ const ContactForm = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border-none focus:ring-0 outline-none"
               required
             />
           </div>
-          <div className="mb-4">
+          <div className=" relative  m-4">
             <label
               htmlFor="name"
-              className="block mb-2 text-sm font-medium text-gray-700"
+              className="absolute -top-2 left-3 border border-sky-10 bg-white rounded px-1 text-sm text-gray-500"
             >
               Email
             </label>
@@ -66,14 +66,14 @@ const ContactForm = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border-none focus:ring-0 outline-none"
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="relative m-4">
             <label
               htmlFor="name"
-              className="block mb-2 text-sm font-medium text-gray-700"
+              className="absolute -top-2 left-3 border border-sky-10 bg-white rounded px-1 text-sm text-gray-500"
             >
               Message
             </label>
@@ -92,7 +92,7 @@ const ContactForm = () => {
           {/* Ajoutez des champs similaires pour email et message */}
           <button
             type="submit"
-            className="w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            className="w-full px-4 py-2 text-black bg-blue-500 rounded-md hover:bg-sky-9 focus:outline-none focus:bg-blue-600"
           >
             Envoyer
           </button>

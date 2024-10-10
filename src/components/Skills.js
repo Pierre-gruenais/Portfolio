@@ -24,7 +24,7 @@ const Skills = () => {
   
 
   const SkillBox = ({ title, skills, isTransversal= false}) => (
-    <div className="border p-4 rounded-lg bg-green-300 h-full">
+    <div className="border p-4 rounded-lg bg-sky-7 h-full">
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       {isTransversal ? ( 
         <ul className="list-none pl-5">
@@ -55,14 +55,16 @@ const Skills = () => {
   );
 
   return (
-    <div className="container mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-6">Compétences techniques</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div className=" py-8 bg-sky-12 w-full ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-2xl font-bold mb-6 text-sky-7">Compétences techniques</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 bg-sky-12">
         <SkillBox title="Front-end" skills={skills.frontend} />
         <SkillBox title="Back-end" skills={skills.backend} />
         <SkillBox title="Compétences transversales" skills={skills.transversal} isTransversal={true} />
       
       </div>
+ </div>
  
   </div>
 
