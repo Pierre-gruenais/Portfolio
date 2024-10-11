@@ -6,14 +6,33 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
+ 
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-  };
+    
+    // Envoie les données au service Formspree
+    const response = await fetch('https://formspree.io/f/myzyygbn', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      setStatus("Message envoyé avec succès !");
+      setFormData({ name: '', email: '', message: '' }); // Réinitialiser le formulaire
+    } else {
+      setStatus("Erreur lors de l'envoi du message. Veuillez réessayer.");
+    }
+  
+}
   return (
     <div className="mb-12 text-black bg-sky-12 py-8">
       <div className="flex flex-col sm:flex-row items-center justify-center text-center sm:text-left">
@@ -27,16 +46,20 @@ const ContactForm = () => {
           className="h-6 w-6 mx-2 mt-4 sm:mt-0 transform sm:rotate-0 rotate-90 transition-transform duration-300"
         />
         <a
-          href="mailto:votre@email.com"
+          href="contact@pierregruenais 	"
           className="ml-2 text-sky-7 hover:underline"
         >
-          votre@email.com
+          email
         </a>
       </div>
      
         </div>
       <p className="mt-4 mb-4 text-white"> ou me laisser un message ci-dessous</p>
 
+    {/* Affichage du message de confirmation ou d'erreur */}
+    {status && <p className={`text-center my-4 ${status.includes("succès") ? "text-green-500" : "text-red-500"}`}>{status}</p>}
+
+    
       <div className="">
         <form onSubmit={handleSubmit} className="max-w-md mx-auto">
           <div className="relative m-4">

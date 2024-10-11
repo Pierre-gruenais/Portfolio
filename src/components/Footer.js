@@ -24,7 +24,7 @@ const Footer = () => {
             <FaGithub size={24} />
           </a>
 
-          <a  href="mailto:votre@email.com" className="hover:text-gray-800">  
+          <a  href="contact@pierregruenais 	" className="hover:text-gray-800">  
           <img src="images/mail-3.svg" alt="Contact icon" className="h-6 w-6 mr-2 "/>
             
          </a>

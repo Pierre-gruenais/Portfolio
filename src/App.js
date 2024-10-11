@@ -18,7 +18,8 @@ function App() {
       backgroundImage:"url('images/pexels-luis-gomes.jpg')",
       filter:'brightness(0.7)'
     }}></div>
-    <div className="relative z-10">
+    <div className="relative z-10 ">
+    <div id="home"></div>
       <Header />
       <main>
         <section id="apropos" className="my-5">
