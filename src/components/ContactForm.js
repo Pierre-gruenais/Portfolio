@@ -16,12 +16,15 @@ const ContactForm = () => {
   };
   return (
     <div className="mb-12 text-black bg-sky-12 py-8">
-      <p className="text-white">
+      <div className="flex flex-col sm:flex-row items-center justify-center text-center sm:text-left">
+      <p className="text-white mb-4 sm:mb-0">
         Vous pouvez me contacter ici{" "}
-        <img
+        </p>
+        <div className="flex flex-col sm:flex-row items-center"> 
+          <img
           src="images/hand_point_right.png"
           alt="hand point"
-          className="inline-block h-6 w-6 mx-2 sm:rotate-0 rotate-90"
+          className="h-6 w-6 mx-2 mt-4 sm:mt-0 transform sm:rotate-0 rotate-90 transition-transform duration-300"
         />
         <a
           href="mailto:votre@email.com"
@@ -29,7 +32,9 @@ const ContactForm = () => {
         >
           votre@email.com
         </a>
-      </p>
+      </div>
+     
+        </div>
       <p className="mt-4 mb-4 text-white"> ou me laisser un message ci-dessous</p>
 
       <div className="">

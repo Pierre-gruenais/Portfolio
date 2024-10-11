@@ -123,12 +123,12 @@ const Link = ({ heading, imgSrc, subheading, href, className }) => {
 function Apropos() {
   return (
     <div className="bg-sky-12 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto"></div>
-    <section className="border border-solid border-sky-7 rounded-lg bg-sky-12 text-white flex flex-col md:flex-row items-center justify-between p-8 mb-0">
+      <div className="max-w-5xl mx-auto"></div>
+    <section className="border border-solid border-sky-7 rounded-lg bg-sky-12 text-white flex flex-col md:flex-row items-center justify-between p-8 spac-y-8 md:space-y-0 md:space:space-x-8">
       {/* Section "À propos de moi" */}
-      <div className="w-full md:w-1/3 mb-4 md:mb-0">
+      <div className="w-full md:w-5/12">
         <h2 className="text-2xl text-sky-7 font-bold mb-4">À propos de moi</h2>
-        <p>
+        <p className="text-sm">
           Après une carrière longue et enrichissante dans la restauration, j'ai
           décidé de relever de nouveaux défis en me tournant vers le
           développement web. <br />
@@ -147,11 +147,11 @@ function Apropos() {
       </div>
 
       {/* Image de profil au centre */}
-      <div className="w-full md:w-1/3 flex justify-center mb-4 md:mb-0">
+      <div className="w-full md:w-2/12 flex justify-center ">
         <img
-          src={`${process.env.PUBLIC_URL}/maTete.jpg`}
+          src={`${process.env.PUBLIC_URL}images/photo-profil.jpg`}
           alt="ma grosse tête"
-          className="w-64 h-64 rounded-full"
+          className="w-40 h-40 rounded-full "
         />
       </div>
 
