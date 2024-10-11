@@ -46,7 +46,7 @@ const ContactForm = () => {
           className="h-6 w-6 mx-2 mt-4 sm:mt-0 transform sm:rotate-0 rotate-90 transition-transform duration-300"
         />
         <a
-          href="contact@pierregruenais 	"
+          href="mailto:contact@pierregruenais.com 	"
           className="ml-2 text-sky-7 hover:underline"
         >
           email

@@ -14,10 +14,10 @@ const Skills = () => {
     ],
     transversal: [
       { name: "Autonome, rigoureux, résilient" },
-      { name: "Attentif aux détails"},
-      { name: "capacité éprouvée à travailler en groupe et en collaboration"},
-      { name: "Agile dans l'apprentissage de nouvelles compétences et technologies"},
-      { name: "Excellentes compétences en communication avec les membres de l’équipe et les clients"},
+      { name: "- Attentif aux détails"},
+      { name: "- Capacité éprouvée à travailler en groupe et en collaboration"},
+      { name: "- Agile dans l'apprentissage de nouvelles compétences et technologies"},
+      { name: "- Excellente communication avec les équipe et les clients"},
     ],
   };
 

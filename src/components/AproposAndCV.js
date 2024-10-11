@@ -130,17 +130,16 @@ function Apropos() {
         <h2 className="text-2xl text-sky-7 font-bold mb-4">À propos de moi</h2>
         <p className="text-sm">
           Après une carrière longue et enrichissante dans la restauration, j'ai
-          décidé de relever de nouveaux défis en me tournant vers le
+          décidé de relever de nouveaux défis et de faire un virage à180° en me tournant vers le
           développement web. <br />
-          Cette discipline m’ayant toujours attiré elle me permettra d'exploiter
-          les compétences et l'expérience professionnelles que j'ai acquises au
-          fil des ans tout en déployant de nouvelles méthodologies de travail.
+          Cette discipline m’ayant toujours interressé, elle me permettra d'exploiter
+          les compétences et l'expérience professionnelles,créativité,précision, que j'ai acquises au
+          fil des ans tout en découvrant de nouvelles méthodologies de travail.
           <br />
           <br />
           Récemment certifié en développement web, je suis désormais prêt à
-          atteindre de nouveaux objectifs professionnels. Mon ambition est de
-          créer des solutions innovantes qui améliorent l'expérience
-          utilisateur, tout en continuant à évoluer dans ce domaine passionnant.
+          atteindre mes nouveaux objectifs professionnels et partager mes compétences et mon experience. 
+          Je vise à développer des sites web performants et accessibles, en m'adaptant  aux éxigences du domaine.
           Je vous invite à découvrir mes projets et mon parcours sur ce
           portfolio en ligne.
         </p>
