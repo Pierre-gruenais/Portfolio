@@ -24,10 +24,10 @@ const ProjetsGallery = () => {
       title: "FrenchWordle",
       description: (
         <>
-          "FrenchWordle est un jeu de mots interactif et responsive,adaptaté du
+          FrenchWordle est un jeu de mots interactif et responsive,adaptaté du
           populaire jeu Wordle du NYTimes. <br />
           Les joueurs doivent deviner un mot de cinq lettres en un maximum de
-          six essais.",
+          six essais.
         </>
       ),
 
@@ -40,10 +40,10 @@ const ProjetsGallery = () => {
       description: (
         <>
           {" "}
-          "GameGirl est un jeu en développement, inspiré des classiques Game &
+          GameGirl est un jeu en développement, inspiré des classiques Game &
           Watch <br />
           Avec un gameplay simple et addictif, il s'adresse aux enfants et
-          continuera d'évoluer, avec de nouvelles fonctionnalités à venir.",
+          continuera d'évoluer, avec de nouvelles fonctionnalités à venir.
         </>
       ),
       techStack: "Html, CSS, Javascript",
@@ -55,8 +55,8 @@ const ProjetsGallery = () => {
       description: (
         <>
           {" "}
-          "Le Portfolio où vous êtes actuellement <br />
-          ",
+          Le Portfolio où vous êtes actuellement 
+          
         </>
       ),
       techStack: "React, Javascript, Tailwind",
