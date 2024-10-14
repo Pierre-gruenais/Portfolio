@@ -60,23 +60,23 @@ const ProjetsGallery = () => {
         </>
       ),
       techStack: "React, Javascript, Tailwind",
-      imageUrl: "",
-      projectUrl: "",
+      imageUrl: "images/apercuPortfolio.png",
+      projectUrl: "https://www.pierregruenais.com/",
     },
   ];
   return (
     <div className="bg-sky-12   px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-6xl mx-auto  bg-sky-12 mt-0 ">
-      <h2 className="text-2xl font-bold mb-8 text-sky-7 text-center">Projets</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
+        <h2 className="text-2xl font-bold mb-8 text-sky-7 text-center">
+          Projets
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
 export default ProjetsGallery;
-
-
