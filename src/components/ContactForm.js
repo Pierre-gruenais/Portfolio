@@ -117,7 +117,7 @@ const ContactForm = () => {
             ></textarea>
           </div>
 
-          {/* Ajoutez des champs similaires pour email et message */}
+        
           <button
             type="submit"
             className="w-full px-4 py-2 text-black bg-blue-500 rounded-md hover:bg-sky-9 focus:outline-none focus:bg-blue-600"
