@@ -4,13 +4,23 @@ import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 
 // Fonction pour gérer le téléchargement du CV
-const handleDownload = () => {
-  const link = document.createElement("a");
-  link.href = "documents/CV-portfolio.pdf";
-  link.download = "pierre-cv.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+const handleDownload = (e) => {
+  e.preventDefault();
+
+  //Detecte si l'appareil est un ios
+  const isIOS = /ipad|iphone|ipod/.test(navigator.userAgent);
+
+  if (isIOS) {
+    //pour ios ouvrir le PDF dans un nouvel onglet
+    window.open("/document/CV-portfolio.pdf", "_blank");
+  } else {
+    const link = document.createElement("a");
+    link.href = "documents/CV-portfolio.pdf";
+    link.download = "pierre-cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 };
 const Link = ({ heading, imgSrc, subheading, href, className }) => {
   const ref = useRef(null);
@@ -46,7 +56,7 @@ const Link = ({ heading, imgSrc, subheading, href, className }) => {
       href={href}
       ref={ref}
       onMouseMove={handleMouseMove}
-      onClick={handleDownload}
+      onClick={(e) => handleDownload(e)}
       initial="initial"
       whileHover="whileHover"
       className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
