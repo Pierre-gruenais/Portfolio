@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 import { Download } from "lucide-react";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
@@ -6,7 +6,7 @@ import { FiArrowRight } from "react-icons/fi";
 // Fonction pour gérer le téléchargement du CV
 const handleDownload = () => {
   const link = document.createElement("a");
-  link.href = "documents/CV_Portfolio-Pierre _Gruenais.pdf";
+  link.href = "documents/public/documents/CV_portfolio- Pierre_Gruenais.pdf";
   link.download = "pierre-cv.pdf";
   document.body.appendChild(link);
   link.click();
@@ -124,52 +124,55 @@ function Apropos() {
   return (
     <div className="bg-sky-12 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto"></div>
-    <section className="border border-solid border-sky-7 rounded-lg bg-sky-12 text-white flex flex-col md:flex-row items-center justify-between p-8 spac-y-8 md:space-y-0 md:space:space-x-8">
-      {/* Section "À propos de moi" */}
-      <div className="w-full md:w-5/12">
-        <h2 className="text-2xl text-sky-7 font-bold mb-4">À propos de moi</h2>
-        <p className="text-sm">
-          Après une carrière longue et enrichissante dans la restauration, j'ai
-          décidé de relever de nouveaux défis et de faire un virage à 180° en me tournant vers le
-          développement web. <br />
-          Cette discipline m’ayant toujours interressé, elle me permettra d'exploiter
-          les compétences et l'expérience professionnelles, créativité, précision, rigueur que j'ai acquises au
-          fil des ans tout en découvrant de nouvelles méthodologies de travail.
-          <br />
-          <br />
-          Récemment certifié en développement web, je suis désormais prêt à
-          atteindre mes nouveaux objectifs professionnels et partager mes compétences et mon experience. <br />
-          Je vise à développer des sites web performants et accessibles, en m'adaptant  aux éxigences du domaine.
-          <br />Je vous invite à découvrir mes projets et mon parcours sur ce
-          portfolio en ligne.
-        </p>
-      </div>
+      <section className="border border-solid border-sky-7 rounded-lg bg-sky-12 text-white flex flex-col md:flex-row items-center justify-between p-8 spac-y-8 md:space-y-0 md:space:space-x-8">
+        {/* Section "À propos de moi" */}
+        <div className="w-full md:w-5/12">
+          <h2 className="text-2xl text-sky-7 font-bold mb-4">
+            À propos de moi
+          </h2>
+          <p className="text-sm">
+            Après une carrière longue et enrichissante dans la restauration,
+            j'ai décidé de relever de nouveaux défis et de faire un virage à
+            180° en me tournant vers le développement web. <br />
+            Cette discipline m’ayant toujours interressé, elle me permettra
+            d'exploiter les compétences et l'expérience professionnelles,
+            créativité, précision, rigueur que j'ai acquises au fil des ans tout
+            en découvrant de nouvelles méthodologies de travail.
+            <br />
+            <br />
+            Récemment certifié en développement web, je suis désormais prêt à
+            atteindre mes nouveaux objectifs professionnels et partager mes
+            compétences et mon experience. <br />
+            Je vise à développer des sites web performants et accessibles, en
+            m'adaptant aux éxigences du domaine.
+            <br />
+            Je vous invite à découvrir mes projets et mon parcours sur ce
+            portfolio en ligne.
+          </p>
+        </div>
 
-      {/* Image de profil au centre */}
-      <div className="w-full md:w-2/12 flex justify-center ">
-        <img
-          src={`${process.env.PUBLIC_URL}images/photo-profil.jpg`}
-          alt="ma grosse tête"
-          className="w-40 h-40 rounded-full "
-        />
-      </div>
+        {/* Image de profil au centre */}
+        <div className="w-full md:w-2/12 flex justify-center ">
+          <img
+            src={`${process.env.PUBLIC_URL}images/photo-profil.jpg`}
+            alt="ma grosse tête"
+            className="w-40 h-40 rounded-full "
+          />
+        </div>
 
-      {/* Section "Mon CV" à droite 
+        {/* Section "Mon CV" à droite 
       <div className="w-full md:w-1/3">
        <h2 className="text-2xl font-bold mb-4  text-sky-7 ">Mon CV</h2>*/}
         <Link
-            heading="Mon CV"
-            subheading="Cliquez pour télécharger"
-            imgSrc="images/CV-thumbnail.png" // Remplace par un aperçu de ton CV
-            href="#"
-            className="bg-sky-7 p-4 rounded-lg transform -translate-x-12"
-           
-          />
-      {/*</section></div>*/}
-    </section>
+          heading="Mon CV"
+          subheading="Cliquez pour télécharger"
+          imgSrc="images/CV-thumbnail.png" // Remplace par un aperçu de ton CV
+          href="#"
+          className="bg-sky-7 p-4 rounded-lg transform -translate-x-12"
+        />
+        {/*</section></div>*/}
+      </section>
     </div>
-     
-     
   );
 }
 
