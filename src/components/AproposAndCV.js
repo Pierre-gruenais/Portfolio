@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import { Download } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 
 // Fonction pour gérer le téléchargement du CV
 const handleDownload = () => {
   const link = document.createElement("a");
-  link.href = "documents/public/documents/CV_portfolio- Pierre_Gruenais.pdf";
+  link.href = "documents/CV-portfolio.pdf";
   link.download = "pierre-cv.pdf";
   document.body.appendChild(link);
   link.click();
@@ -46,7 +46,7 @@ const Link = ({ heading, imgSrc, subheading, href, className }) => {
       href={href}
       ref={ref}
       onMouseMove={handleMouseMove}
-      onClick={handleDownload} // Utiliser handleDownload ici
+      onClick={handleDownload}
       initial="initial"
       whileHover="whileHover"
       className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
@@ -152,24 +152,44 @@ function Apropos() {
         </div>
 
         {/* Image de profil au centre */}
-        <div className="w-full md:w-2/12 flex justify-center ">
+        <div className="w-full md:w-2/12 flex flex-col items-center ">
           <img
             src={`${process.env.PUBLIC_URL}images/photo-profil.jpg`}
             alt="ma grosse tête"
             className="w-40 h-40 rounded-full "
           />
+          <div className="flex space-x-4 mt-4">
+            <a
+              href="https://www.linkedin.com/in/pierre-gruenais/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-7"
+            >
+              <FaLinkedin size={24} />
+            </a>
+            <a
+              href="https://github.com/Pierre-gruenais"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-7"
+            >
+              <FaGithub size={24} />
+            </a>
+          </div>
         </div>
 
         {/* Section "Mon CV" à droite 
-      <div className="w-full md:w-1/3">
+      
        <h2 className="text-2xl font-bold mb-4  text-sky-7 ">Mon CV</h2>*/}
-        <Link
-          heading="Mon CV"
-          subheading="Cliquez pour télécharger"
-          imgSrc="images/CV-thumbnail.png" // Remplace par un aperçu de ton CV
-          href="#"
-          className="bg-sky-7 p-4 rounded-lg transform -translate-x-12"
-        />
+        <div className="w-full md:w-1/3 flex  justify-center">
+          <Link
+            heading="Mon CV"
+            subheading="Cliquez pour télécharger"
+            imgSrc="images/CV-thumbnail.png" //  aperçu du CV
+            href="#"
+            className="bg-sky-7 p-4 rounded-lg transform -translate-x-12"
+          />
+        </div>
         {/*</section></div>*/}
       </section>
     </div>
