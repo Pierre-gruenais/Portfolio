@@ -165,7 +165,7 @@ function Apropos() {
         <div className="w-full md:w-2/12 flex flex-col items-center ">
           <img
             src={`${process.env.PUBLIC_URL}images/photo-profil.jpg`}
-            alt="ma grosse tête"
+            alt="ma tête"
             className="w-40 h-40 rounded-full "
           />
           <div className="flex space-x-4 mt-4">
